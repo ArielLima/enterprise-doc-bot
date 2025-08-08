@@ -1,0 +1,36 @@
+# Core dependencies
+pydantic>=2.0.0
+pyyaml>=6.0
+requests>=2.31.0
+
+# GitHub integration
+PyGithub>=1.59.0
+gitpython>=3.1.0
+
+# Confluence integration
+atlassian-python-api>=3.41.0
+
+# Vector search and embeddings
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.4
+numpy>=1.24.0
+
+# LLM integration
+ollama>=0.1.0
+
+# Web interface
+streamlit>=1.28.0
+fastapi>=0.104.0
+uvicorn>=0.24.0
+
+# Utilities
+python-dotenv>=1.0.0
+click>=8.1.0
+rich>=13.0.0
+tqdm>=4.66.0
+
+# Development
+pytest>=7.4.0
+black>=23.0.0
+isort>=5.12.0
+mypy>=1.5.0

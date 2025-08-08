@@ -1,0 +1,30 @@
+sources:
+  swagger:
+    - url: "https://petstore3.swagger.io/api/v3/openapi.json"
+      name: "Petstore API"
+    - url: "https://api.github.com/swagger.json"
+      name: "GitHub API"
+  
+  git:
+    - url: "https://github.com/tiangolo/fastapi.git"
+      name: "FastAPI Framework"
+      branch: "master"
+  
+  knowledge_base:
+    - url: "https://scilifelab.atlassian.net/wiki/spaces/demo/overview"
+      type: "confluence"
+      name: "SciLifeLab Demo Space"
+    - path: "./docs"
+      type: "local"
+      name: "Local Documentation"
+
+llm:
+  model: "llama3.2:1b"
+  request_timeout: 240
+
+storage:
+  persist_dir: "./index/faiss_index"
+
+app:
+  title: "Enterprise Doc Bot"
+  system_prompt: "You are a helpful assistant. Base answers strictly on provided context."
